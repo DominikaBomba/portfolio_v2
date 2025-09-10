@@ -67,9 +67,9 @@
             <div class="projects-grid">
             
                 <div class="project-card" data-project="ambilink">
-                    <img src="images/ambilink/r2.png" alt="photo of the project">
-                    <h3>Educational Platform AmbiLink</h3>
-                    <p>An online learning platform supporting students in their professional and personal development.
+                    <img src="images/ambilink/r4.png" alt="photo of the project">
+                    <h3>Educational Platform (over 400 users!)</h3>
+                    <p>I've co-founded Ambition Link (ambilink.pl), an online learning platform supporting students in their professional and personal development.
 
                         The project connects young people with mentors, events, and valuable resources 
                         to<b> inspire and develop their ambitions</b>. It features a simple interface, a login system with user roles, and database integration.</p>
@@ -96,25 +96,30 @@
         </div>
 
 
-                <div class="project-card" data-project="weather">
-                    <h3>Weather Dashboard</h3>
-                    <p>Interaktywna aplikacja pogodowa z mapami, prognozami długoterminowymi i możliwością zapisywania ulubionych lokalizacji.</p>
+                <div class="project-card" data-project="mfagame">
+                    <img src="images/mfa/r1.png" alt="game image">
+                    <h3>Magic Forest Game</h3>
+                    
+                    <p>Fun game created as my early experimating in Python and Pygame.
+                         Navigate through enchanted forests, overcome obstacles(bats), and beat your enemy by reaching the top of the hill with magical doors first.
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Chart.js</span>
-                        <span class="tech-tag">OpenWeather API</span>
+                        <span class="tech-tag">Pygame</span>
+                        <span class="tech-tag">Python</span>
+                      
                     </div>
                 </div>
 
-                <div class="project-card" data-project="portfolio">
-                    <h3>Portfolio Website</h3>
-                    <p>Responsywna strona portfolio z animacjami, galerią projektów i formularzem kontaktowym.</p>
+                <div class="project-card" data-project="future_school">
+                    <h3>3D Future School</h3>
+                    <img src="images/school/r3.png" alt="Future school logo">
+                    <p> A website created as part of the “School of the Future” project, developed in cooperation with <em>Friedrich-Albert-Lange-Schule (FALS)</em> in Germany. The project includes the use of a 3D model.
+               
                     <div class="project-tech">
                         <span class="tech-tag">HTML5</span>
                         <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">GSAP</span>
+                        <span class="tech-tag">Fusion 360</span>
+                        <span class="tech-tag">Blender</span>
                     </div>
                 </div>
             </div>
@@ -204,9 +209,9 @@ imageModal.addEventListener('click', (e) => {
         function handleNavbar() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.3)';
             } else {
-                navbar.style.background = 'rgba(0, 0, 0, 0.8)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.5)';
             }
         }
 
@@ -244,8 +249,12 @@ imageModal.addEventListener('click', (e) => {
                 demoLink: "https://ambilink.pl/",
                 githubLink: "https://github.com/username/ecommerce-app",
                 images: [
-                    "images/ambilink/r2.png",
-                    "images/ambilink/r1.png"
+                "images/ambilink/r2.png",
+                    "images/ambilink/r1.png",
+                    "images/ambilink/r3.png",
+                    "images/ambilink/r4.png",
+                    "images/ambilink/r5.png"
+                    
                     
                 ]
             },
@@ -267,32 +276,34 @@ imageModal.addEventListener('click', (e) => {
   ]
 }
 ,
-            weather: {
-                title: "Weather Dashboard",
-                description: "Interaktywna aplikacja pogodowa oferująca kompleksowy przegląd warunków atmosferycznych. Dashboard prezentuje aktualne dane pogodowe, prognozy godzinowe i tygodniowe, interaktywne mapy opadów i temperatury oraz alerty pogodowe. Użytkownicy mogą dodawać ulubione lokalizacje, porównywać pogodę między miastami oraz otrzymywać personalizowane powiadomienia o zmianach pogody.",
+mfagame: {
+                title: "Magic Forest Adventure - PyGame",
+                description: "Fun game created as my early experimating in Python and Pygame. Navigate through enchanted forests, overcome obstacles(bats), and beat your enemy by reaching the top of the hill with magical doors first.",
                 pdfLink: "/docs/weather-documentation.pdf",
                 demoLink: "https://demo-weather.example.com",
                 githubLink: "https://github.com/username/weather-dashboard",
                 images: [
-                    "https://via.placeholder.com/400x250/0ea5e9/ffffff?text=Dashboard+Główny",
-                    "https://via.placeholder.com/400x250/84cc16/ffffff?text=Mapa+Pogodowa",
-                    "https://via.placeholder.com/400x250/f97316/ffffff?text=Prognoza+7+dni",
-                    "https://via.placeholder.com/400x250/ec4899/ffffff?text=Ulubione+Miasta"
-                ]
-            },
-            portfolio: {
-                title: "Portfolio Website",
-                description: "Nowoczesna i responsywna strona portfolio zaprojektowana z naciskiem na wydajność i user experience. Strona wykorzystuje zaawansowane animacje CSS i JavaScript, lazy loading obrazów, progresywne ładowanie treści oraz optymalizację SEO. Zaimplementowano ciemny motyw, formularz kontaktowy z walidacją oraz integrację z Google Analytics. Strona została zoptymalizowana pod kątem Core Web Vitals i osiąga wysokie wyniki w testach PageSpeed.",
-                pdfLink: "/docs/portfolio-documentation.pdf",
-                demoLink: "https://portfolio.example.com",
-                githubLink: "https://github.com/username/portfolio-website",
-                images: [
-                    "https://via.placeholder.com/400x250/6366f1/ffffff?text=Strona+Główna",
-                    "https://via.placeholder.com/400x250/8b5cf6/ffffff?text=O+Mnie",
-                    "https://via.placeholder.com/400x250/06b6d4/ffffff?text=Projekty",
-                    "https://via.placeholder.com/400x250/10b981/ffffff?text=Kontakt"
-                ]
-            }
+                "images/mfa/r2.png",
+        "images/mfa/r1.png",
+         "images/mfa/g3.png",
+           "images/mfa/r4.png",
+             "images/mfa/r5.png"
+           ] },
+            future_school: {
+  title: "3D Future School",
+  description: "A website developed as part of the international project 'School of the Future', created in collaboration with Friedrich-Albert-Lange-Schule (FALS) in Germany. The project integrates a 3D model of a school building, designed with Fusion 360 and Blender, and showcases the concept of future-oriented education. The site emphasizes innovation, international teamwork, and creative use of technology.",
+  pdfLink: "", // add if you have documentation
+  demoLink: "", // add live demo link if available
+  githubLink: "", // add repository link if available
+  images: [
+    "images/school/r1.png",
+    "images/school/r2.png",
+    "images/school/r3.png",
+    "images/school/r4.png",
+    "images/school/r5.png"
+  ]
+}
+
         };
 
         // Elementy DOM
