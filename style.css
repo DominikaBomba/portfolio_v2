@@ -64,9 +64,9 @@ nav {
 
 /* Header Section */
 .header-section {
-  
+  width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, #fefefe 0%, #f7931e 100%);
+    background: linear-gradient(135deg, white 0%,  #2c3e50 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,9 +210,9 @@ nav {
 }
 
 .stars {
-    color: #ff6b35;
+   
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .years {
@@ -222,9 +222,8 @@ nav {
 }
 
 .experience {
-    font-size: 14px;
-    opacity: 0.7;
-}
+    font-size: 20px; }
+    
 
 .services-section {
     background: #1a1a1a;
@@ -429,7 +428,7 @@ nav {
     top: 100vh;
     color: white;
     padding: 80px 0;
-    background-color: black;
+    background-color:#2c3e50;
    border-top-right-radius: 50px;
 }
 
@@ -456,10 +455,10 @@ nav {
     
 }
 .project-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     padding: 32px;
-    border: 1px solid #e5e5e0;
+    
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;

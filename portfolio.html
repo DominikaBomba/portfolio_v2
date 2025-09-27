@@ -12,8 +12,8 @@
         <div class="nav-container">
             <div class="logo"><img width="30px;"src="images/coder_emoji.png"></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
+                
+                <li><a href="#services">About me</a></li>
                 
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,17 +29,15 @@
             <div class="shape"></div>
         </div>
         
-        <div class="header-content">
+        <div id="header" class="header-content">
             <div class="text-content">
-                <div class="greeting">Hello! 👋</div>
+                <div class="greeting">Hello</Canvas>! 👋</div>
                 <h1 class="main-title">
                     I'm <span class="name">Dominika Bomba</span>,<br>
-                    <span class="subtitle">Product Designer</span>
+                    <span class="subtitle">Programmer</span>
                 </h1>
                 <p class="description">
-                    Tworzę wyjątkowe doświadczenia użytkowników. 
-                    Nasz sukces to nasz wspólny cel. 
-                    Polecana przez klientów.
+                    I’m passionate about coding and developing projects that create a real positive impact on people’s lives. My greatest inspiration comes from people and meaningful conversations.
                 </p>
                 <div class="cta-buttons">
                     <button class="btn-primary">Portfolio 📁</button>
@@ -50,25 +48,24 @@
             <div class="image-container">
                 <div class="circle-bg"></div>
                 <div class="person-image">
-                   <img class="person-image"src="images/mine_photo.png" alt="my picture">
+                   <img class="person-image"src="images\my_photo_2.jpeg" alt="my picture">
                 </div>
                 <div class="stats">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <div class="years">5 Years</div>
-                    <div class="experience">Experience</div>
+                    <div class="stars">Inspired by conversations</div>
+                    <div class="years"> coding for people</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My projects</h2>
             <div class="projects-grid">
             
                 <div class="project-card" data-project="ambilink">
                     <img src="images/ambilink/r4.png" alt="photo of the project">
-                    <h3>Educational Platform (over 400 users!)</h3>
+                    <h3>Educational Platform (over 600 users!)</h3>
                     <p>I've co-founded Ambition Link (ambilink.pl), an online learning platform supporting students in their professional and personal development.
 
                         The project connects young people with mentors, events, and valuable resources 
@@ -146,12 +143,25 @@
                       
                     </div>
                 </div>
+                <div class="project-card" data-project="facade_videos">
+                    <img src="images/facade/r4.png" alt="facade tutorial website ">
+                    <h3>Educational videos about the facade design pattern</h3>
+                    
+                    <p>A banking system database for managing clients, accounts, transactions, transfers, employees, and banks. It ensures data integrity, efficient storage, and includes triggers, functions, and indexes to support correct and performant financial operations.</p>   <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">design patterns</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CapCut</span>
+                      
+                    </div>
+                </div>
             </div>
             
         </div>
     </section>
     <!-- Services Section -->
-    <section class="services-section" id="services">
+    <section class="services-section" id="services" class="aboutme">
         <div class="services-container">
             <h2 class="services-title">About me</h2>
             <p class="services-description">
@@ -270,9 +280,9 @@ imageModal.addEventListener('click', (e) => {
             ambilink: {
                 title: "Educational Platform - ambilink.pl",
                 description: "An online learning platform supporting students in their professional and personal development. The project connects young people with mentors, events, and valuable resources to inspire and develop their ambitions. It features a simple interface, a login system with user roles, and database integration",
-                pdfLink: "/docs/ecommerce-documentation.pdf",
+               
                 demoLink: "https://ambilink.pl/",
-                githubLink: "https://github.com/username/ecommerce-app",
+                githubLink: "",
                 images: [
                 "images/ambilink/r2.png",
                     "images/ambilink/r1.png",
@@ -301,12 +311,24 @@ imageModal.addEventListener('click', (e) => {
   ]
 }
 ,
+facade_videos: {
+  title: "Educational videos about the facade design pattern",
+  description: "A website with a series of funny, educational videos about the facade design pattern I created with my friends to help students understand it in an easy and accessible way.",
+
+demoLink: "https://dominikabomba.github.io/design_pattern_facade/",
+  githubLink: "https://github.com/DominikaBomba/design_pattern_facade",
+  images: [
+    "images/facade/r1.png","images/facade/r2.png","images/facade/r3.png", "images/facade/r4.png"
+    
+  ]
+}
+,
 mfagame: {
                 title: "Magic Forest Adventure - PyGame",
                 description: "Fun game created as my early experimating in Python and Pygame. Navigate through enchanted forests, overcome obstacles(bats), and beat your enemy by reaching the top of the hill with magical doors first.",
-                pdfLink: "/docs/weather-documentation.pdf",
-                demoLink: "https://demo-weather.example.com",
-                githubLink: "https://github.com/username/weather-dashboard",
+                pdfLink: "",
+                demoLink: "",
+                githubLink: "https://github.com/DominikaBomba/Gra_MagicForestAdventure",
                 images: [
                 "images/mfa/r2.png",
         "images/mfa/r1.png",
@@ -317,9 +339,9 @@ mfagame: {
             future_school: {
   title: "3D Future School",
   description: "A website developed as part of the international project 'School of the Future', created in collaboration with Friedrich-Albert-Lange-Schule (FALS) in Germany. The project integrates a 3D model of a school building, designed with Fusion 360 and Blender, and showcases the concept of future-oriented education. The site emphasizes innovation, international teamwork, and creative use of technology.",
-  pdfLink: "", // add if you have documentation
-  demoLink: "", // add live demo link if available
-  githubLink: "", // add repository link if available
+  pdfLink: "", 
+  demoLink: "https://dominikabomba.github.io/FutureSchoolProject.github.io/main/index.html", 
+  githubLink: "https://github.com/DominikaBomba/FutureSchoolProject.github.io", 
   images: [
     "images/school/r1.png",
     "images/school/r2.png",
@@ -332,9 +354,9 @@ mfagame: {
 stadium_manager: {
   title: "Stadium Manager Console App",
   description: "Stadium Creator is a console application designed to help users manage stadiums, events, performers, and ticket sales. The program uses object-oriented programming in C# on the .NET platform, implementing classes, inheritance, interfaces, and polymorphism. It features a menu-driven console interface for adding and displaying stadiums, events, performers, and managing tickets, including seat availability and participant details. The project emphasizes careful data handling, input validation, and object management in a complex system.",
-  pdfLink: "", // add if you have documentation
-  demoLink: "", // add live demo link if available
-  githubLink: "", // add repository link if available
+  pdfLink: "https://github.com/DominikaBomba/stadiumcreator/blob/main/documentation.pdf", 
+  demoLink: "", 
+  githubLink: "https://github.com/DominikaBomba/stadiumcreator", 
   images: [
     "images/stadium/r1.png",
     "images/stadium/r2.png",
@@ -347,9 +369,9 @@ stadium_manager: {
 bank_database: {
   title: "Bank Database",
   description: "A banking system database for managing clients, accounts, transactions, transfers, employees, and banks. It ensures data integrity, efficient storage, and includes triggers, functions, and indexes to support correct and performant financial operations.",
-  pdfLink: "", // add if you have documentation
-  demoLink: "", // add live demo link if available
-  githubLink: "", // add repository link if available
+  pdfLink: "https://github.com/DominikaBomba/database_banking_system/blob/main/Dominika_Bomba_Bank%2B(3)-compressed.pdf", 
+  demoLink: "", 
+  githubLink: "https://github.com/DominikaBomba/database_banking_system/tree/main", 
   images: [
     "images/bank/r1.png",
     "images/bank/r2.png",
@@ -380,17 +402,22 @@ bank_database: {
             modalDescription.textContent = project.description;
 
             // Aktualizacja linków
-            modalLinks.innerHTML = `
-                <a href="${project.pdfLink}" class="modal-link" target="_blank">
-                    📄 Dokumentacja PDF
-                </a>
-                <a href="${project.demoLink}" class="modal-link secondary" target="_blank">
-                    🔗 Demo na żywo
-                </a>
-                <a href="${project.githubLink}" class="modal-link secondary" target="_blank">
-                    💻 Kod źródłowy
-                </a>
-            `;
+           // Aktualizacja linków
+modalLinks.innerHTML = `
+    ${project.demoLink && project.demoLink.trim() !== "" ? `
+        <a href="${project.demoLink}" class="modal-link secondary" target="_blank">
+            Link
+        </a>` : ""}
+    ${project.githubLink && project.githubLink.trim() !== "" ? `
+        <a href="${project.githubLink}" class="modal-link secondary" target="_blank">
+            Github
+        </a>` : ""}
+    ${project.pdfLink && project.pdfLink.trim() !== "" ? `
+        <a href="${project.pdfLink}" class="modal-link secondary" target="_blank">
+            PDF
+        </a>` : ""}
+`;
+
 
             // Generowanie galerii
             modalGallery.innerHTML = project.images.map(img => `
