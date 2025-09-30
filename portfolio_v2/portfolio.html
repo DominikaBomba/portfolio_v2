@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominika - Product Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body class="alan-sans-font" >
+    <!-- Navigation -->
+    <nav id="navbar" >
+        <div class="nav-container">
+            <div class="logo"><img width="30px;"src="images/coder_emoji.png"></div>
+            <ul class="nav-links">
+                
+                <li><a href="#services">About me</a></li>
+                
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header-section" id="home">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
+        <div id="header" class="header-content">
+            <div class="text-content">
+                <div class="greeting">Hello</Canvas>! 👋</div>
+                <h1 class="main-title">
+                    I'm <span class="name">Dominika Bomba</span>,<br>
+                    <span class="subtitle">Programmer</span>
+                </h1>
+                <p class="description">
+                    I’m passionate about coding and developing projects that create a real positive impact on people’s lives. My greatest inspiration comes from people and meaningful conversations.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary"> <a href="#projects">Portfolio 📁</a></button>
+                    <button class="btn-secondary"> <a href="#projects">About me</a></button>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <div class="circle-bg"></div>
+                <div class="person-image">
+                   <img class="person-image"src="images\my_photo_2.jpeg" alt="my picture">
+                </div>
+                <div class="stats">
+                    <div class="stars">Inspired by conversations</div>
+                    <div class="years"> coding for people</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My projects</h2>
+            <div class="projects-grid">
+            
+                <div class="project-card" data-project="ambilink">
+                    <img src="images/ambilink/r4.png" alt="photo of the project">
+                    <h3>Educational Platform (over 600 users!)</h3>
+                    <p>I've co-founded Ambition Link (ambilink.pl), an online learning platform supporting students in their professional and personal development.
+
+                        The project connects young people with mentors, events, and valuable resources 
+                        to<b> inspire and develop their ambitions</b>. It features a simple interface, a login system with user roles, and database integration.</p>
+                    <div class="project-tech">
+                      <span class="tech-tag">PHP</span>
+                      <span class="tech-tag">MySQL</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                    </div>
+                  </div>
+                  
+
+        <div class="project-card" data-project="restaurant_manager">
+              <img src="images/restaurant/r8.png" alt="photo of the project">
+        <h3>Restaurant Manager</h3>
+        <p>A console-based restaurant management system supporting multiple user roles, order workflows, and revenue reports. Built with C# and .NET 8.0, featuring RBAC, password hashing, file persistence, and unit tests.</p>
+        <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">.NET 8.0</span>
+            <span class="tech-tag">Spectre.Console</span>
+            <span class="tech-tag">xUnit</span>
+        </div>
+        </div>
+
+
+                <div class="project-card" data-project="mfagame">
+                    <img src="images/mfa/r1.png" alt="game image">
+                    <h3>Magic Forest Game</h3>
+                    
+                    <p>Fun game created as my early experimating in Python and Pygame.
+                         Navigate through enchanted forests, overcome obstacles(bats), and beat your enemy by reaching the top of the hill with magical doors first.
+                    <div class="project-tech">
+                        <span class="tech-tag">Pygame</span>
+                        <span class="tech-tag">Python</span>
+                      
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="future_school">
+                    <img src="images/school/r3.png" alt="Future school logo">
+                     <h3>3D Future School</h3>
+                   
+                    <p> A website created as part of the “School of the Future” project, developed in cooperation with <em>Friedrich-Albert-Lange-Schule (FALS)</em> in Germany. The project includes the use of a 3D model.
+               
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Fusion 360</span>
+                        <span class="tech-tag">Blender</span>
+                    </div>
+                </div>
+                <div class="project-card" data-project="stadium_manager">
+                    <img src="images/stadium/r2.png" alt="Stadium manager logo">
+                     <h3>Stadium Manager Console App</h3>
+                   
+                    <p>  A console application designed to help users manage stadiums, events, performers, and ticket sales. The program implements numerous classes, making sure that created objects are added to relevant lists was one of the biggest challenges. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">nUnit</span>
+                        <span class="tech-tag">Console App</span>
+                    </div>
+                </div>
+                <div class="project-card" data-project="bank_database">
+                    <img src="images/bank/r3.png" alt="database of bank logo">
+                    <h3>Bank database</h3>
+                    
+                    <p>A banking system database for managing clients, accounts, transactions, transfers, employees, and banks. It ensures data integrity, efficient storage, and includes triggers, functions, and indexes to support correct and performant financial operations.</p>   <div class="project-tech">
+                        <span class="tech-tag">Pygame</span>
+                        <span class="tech-tag">Python</span>
+                      
+                    </div>
+                </div>
+                <div class="project-card" data-project="facade_videos">
+                    <img src="images/facade/r4.png" alt="facade tutorial website ">
+                    <h3>Educational videos about the facade design pattern</h3>
+                    
+                    <p>A banking system database for managing clients, accounts, transactions, transfers, employees, and banks. It ensures data integrity, efficient storage, and includes triggers, functions, and indexes to support correct and performant financial operations.</p>   <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">design patterns</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CapCut</span>
+                      
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services" class="aboutme">
+        <div class="services-container">
+            <h2 class="services-title">Contact me!</h2>
+            <div id="contacts">
+                <a href="https://github.com/DominikaBomba">
+                    Github
+                </a>
+                <a href="https://www.linkedin.com/in/dominika-bomba-088a63329/">
+                    LinkedIn
+                </a>
+                <a href="mailto:d.bomba806@gmail.com">
+                    Email
+                </a>
+            </div>
+            <p class="services-description">
+                I'm passionate about coding and creating. My biggest motivation is seeing my products positively impacting users.
+                I get inspired by conversations and people, and create products that are ethical and ser-friendly.
+            </p>
+
+
+        </div>
+    </section>
+      <!-- Modal -->
+      <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle">Title</h2>
+                <p class="modal-description" id="modalDescription">Szczegółowy opis projektu...</p>
+                
+                <div class="modal-links" id="modalLinks">
+                    <a href="#" class="modal-link">
+                        📄 Dokumentacja PDF
+                    </a>
+                    <a href="#" class="modal-link secondary">
+                        🔗 Demo na żywo
+                    </a>
+                    <a href="#" class="modal-link secondary">
+                        💻 Kod źródłowy
+                    </a>
+                </div>
+
+                <div class="gallery" id="modalGallery">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="image-modal" id="imageModal">
+  <span class="image-close">&times;</span>
+  <img class="image-modal-content" id="imageModalImg">
+</div>
+
+    <script>
+        // Modal do powiększania zdjęć
+const imageModal = document.getElementById('imageModal');
+const imageModalImg = document.getElementById('imageModalImg');
+const imageClose = document.querySelector('.image-close');
+
+modalGallery.addEventListener('click', (e) => {
+    if (e.target.tagName === 'IMG') {
+        imageModal.style.display = "block";
+        imageModalImg.src = e.target.src;
+    }
+});
+
+imageClose.addEventListener('click', () => {
+    imageModal.style.display = "none";
+});
+
+imageModal.addEventListener('click', (e) => {
+    if (e.target === imageModal) {
+        imageModal.style.display = "none";
+    }
+});
+
+        // Smooth scroll effect for services section
+        function handleScroll() {
+            const servicesSection = document.querySelector('.services-section');
+            const rect = servicesSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Trigger animation when section is 30% visible
+            if (rect.top < windowHeight * 0.7) {
+                servicesSection.classList.add('visible');
+            }
+        }
+
+        // Navbar background on scroll
+        function handleNavbar() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.3)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.5)';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            handleScroll();
+            handleNavbar();
+        });
+
+       
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            handleScroll();
+            handleNavbar();
+        });
+    </script>
+     <script>
+       
+        const projectsData = {
+            ambilink: {
+                title: "Educational Platform - ambilink.pl",
+                description: "An online learning platform supporting students in their professional and personal development. The project connects young people with mentors, events, and valuable resources to inspire and develop their ambitions. It features a simple interface, a login system with user roles, and database integration",
+               
+                demoLink: "https://ambilink.pl/",
+                githubLink: "",
+                images: [
+                "images/ambilink/r2.png",
+                    "images/ambilink/r1.png",
+                    "images/ambilink/r3.png",
+                    "images/ambilink/r4.png",
+                    "images/ambilink/r5.png"
+                    
+                    
+                ]
+            },
+            restaurant_manager: {
+  title: "Restaurant Manager",
+  description: "A console-based application for managing a restaurant, developed in C# with .NET 8.0. The system supports multiple user roles (Admin, Customer, Waiter, Cook), order processing with statuses (placed, in preparation, served, paid), and revenue reporting. It leverages delegates, events, interfaces, inheritance, RBAC (role-based access control), password hashing, and file persistence. The terminal interface is enhanced with styled tables and charts using Spectre.Console. The project also includes unit tests implemented with xUnit.",
+  pdfLink: "https://github.com/DominikaBomba/restaurant_manager/blob/main/documentation.pdf",
+
+  githubLink: "https://github.com/DominikaBomba/restaurant_manager",
+  images: [
+    "images/restaurant/r9.png",
+     "images/restaurant/r8.png",
+      "images/restaurant/r5.png",
+       "images/restaurant/r2.png",
+        "images/restaurant/r1.png",
+         "images/restaurant/r3.png",
+           "images/restaurant/r4.png",
+             "images/restaurant/r6.png"
+  ]
+}
+,
+facade_videos: {
+  title: "Educational videos about the facade design pattern",
+  description: "A website with a series of funny, educational videos about the facade design pattern I created with my friends to help students understand it in an easy and accessible way.",
+
+demoLink: "https://dominikabomba.github.io/design_pattern_facade/",
+  githubLink: "https://github.com/DominikaBomba/design_pattern_facade",
+  images: [
+    "images/facade/r1.png","images/facade/r2.png","images/facade/r3.png", "images/facade/r4.png"
+    
+  ]
+}
+,
+mfagame: {
+                title: "Magic Forest Adventure - PyGame",
+                description: "Fun game created as my early experimating in Python and Pygame. Navigate through enchanted forests, overcome obstacles(bats), and beat your enemy by reaching the top of the hill with magical doors first.",
+                pdfLink: "",
+                demoLink: "",
+                githubLink: "https://github.com/DominikaBomba/Gra_MagicForestAdventure",
+                images: [
+                "images/mfa/r2.png",
+        "images/mfa/r1.png",
+         "images/mfa/g3.png",
+           "images/mfa/r4.png",
+             "images/mfa/r5.png"
+           ] },
+            future_school: {
+  title: "3D Future School",
+  description: "A website developed as part of the international project 'School of the Future', created in collaboration with Friedrich-Albert-Lange-Schule (FALS) in Germany. The project integrates a 3D model of a school building, designed with Fusion 360 and Blender, and showcases the concept of future-oriented education. The site emphasizes innovation, international teamwork, and creative use of technology.",
+  pdfLink: "", 
+  demoLink: "https://dominikabomba.github.io/FutureSchoolProject.github.io/main/index.html", 
+  githubLink: "https://github.com/DominikaBomba/FutureSchoolProject.github.io", 
+  images: [
+    "images/school/r1.png",
+    "images/school/r2.png",
+    "images/school/r3.png",
+    "images/school/r4.png",
+    "images/school/r5.png"
+  ]
+}
+,
+stadium_manager: {
+  title: "Stadium Manager Console App",
+  description: "Stadium Creator is a console application designed to help users manage stadiums, events, performers, and ticket sales. The program uses object-oriented programming in C# on the .NET platform, implementing classes, inheritance, interfaces, and polymorphism. It features a menu-driven console interface for adding and displaying stadiums, events, performers, and managing tickets, including seat availability and participant details. The project emphasizes careful data handling, input validation, and object management in a complex system.",
+  pdfLink: "https://github.com/DominikaBomba/stadiumcreator/blob/main/documentation.pdf", 
+  demoLink: "", 
+  githubLink: "https://github.com/DominikaBomba/stadiumcreator", 
+  images: [
+    "images/stadium/r1.png",
+    "images/stadium/r2.png",
+    "images/stadium/r3.png",
+    "images/stadium/r4.png",
+    "images/stadium/r5.png",
+     "images/stadium/r6.png"
+  ]
+},
+bank_database: {
+  title: "Bank Database",
+  description: "A banking system database for managing clients, accounts, transactions, transfers, employees, and banks. It ensures data integrity, efficient storage, and includes triggers, functions, and indexes to support correct and performant financial operations.",
+  pdfLink: "https://github.com/DominikaBomba/database_banking_system/blob/main/Dominika_Bomba_Bank%2B(3)-compressed.pdf", 
+  demoLink: "", 
+  githubLink: "https://github.com/DominikaBomba/database_banking_system/tree/main", 
+  images: [
+    "images/bank/r1.png",
+    "images/bank/r2.png",
+    "images/bank/r3.png",
+    "images/bank/r4.png",
+    "images/bank/r5.png",
+     "images/bank/r6.png"
+  ]
+}
+
+        };
+
+        // Elementy DOM
+        const modal = document.getElementById('projectModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalLinks = document.getElementById('modalLinks');
+        const modalGallery = document.getElementById('modalGallery');
+        const closeBtn = document.querySelector('.close-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        // Otwieranie modala
+        function openModal(projectKey) {
+            const project = projectsData[projectKey];
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            modalDescription.textContent = project.description;
+
+            // Aktualizacja linków
+           // Aktualizacja linków
+modalLinks.innerHTML = `
+    ${project.demoLink && project.demoLink.trim() !== "" ? `
+        <a href="${project.demoLink}" class="modal-link secondary" target="_blank">
+            Link
+        </a>` : ""}
+    ${project.githubLink && project.githubLink.trim() !== "" ? `
+        <a href="${project.githubLink}" class="modal-link secondary" target="_blank">
+            Github
+        </a>` : ""}
+    ${project.pdfLink && project.pdfLink.trim() !== "" ? `
+        <a href="${project.pdfLink}" class="modal-link secondary" target="_blank">
+            PDF
+        </a>` : ""}
+`;
+
+
+            // Generowanie galerii
+            modalGallery.innerHTML = project.images.map(img => `
+                <div class="gallery-item">
+                    <img src="${img}" alt="Screenshot projektu" loading="lazy">
+                </div>
+            `).join('');
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Zamykanie modala
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Event listeners
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const projectKey = card.dataset.project;
+                openModal(projectKey);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Smooth animations for project cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animations
+        projectCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
