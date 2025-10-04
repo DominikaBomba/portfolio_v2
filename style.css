@@ -14,6 +14,7 @@ nav {
     position: fixed;
     top: 20px;
     left: 50%;
+
     transform: translateX(-50%);
     
     background: rgba(255, 255, 255, 0.3); 
@@ -200,7 +201,7 @@ nav {
     position: absolute;
     top: 50px;
     right: -50px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.65);
     padding: 20px;
     border-radius: 20px;
     text-align: center;
@@ -221,12 +222,9 @@ nav {
     margin-bottom: 5px;
 }
 
-.experience {
-    font-size: 20px; }
-    
 
 .services-section {
-    background: #1a1a1a;
+    backdrop-filter: blur(30px);
     color: white;
     padding: 80px 0;
     transform: translateY(100px);
@@ -252,7 +250,7 @@ nav {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    background: linear-gradient(180deg, #2c3e50, #507191);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -309,6 +307,29 @@ nav {
     line-height: 1.6;
 }
 
+.alan-sans-font {
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#contacts {
+   
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+    #contacts > * {
+        text-decoration: none;
+        background: #f3f4f6;
+        color: #4b5563;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 /* Decorative Elements */
 .floating-shapes {
     position: absolute;
@@ -359,6 +380,44 @@ nav {
 
 /* Responsive */
 @media (max-width: 768px) {
+   
+    .stats {
+        position: absolute;
+        top:0;
+        right: -10%;
+        background: rgba(255, 255, 255, 0.65);
+        width: 120%;
+        border-radius: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        color: #2c3e50;
+        z-index: 3;
+    }
+
+    .stars {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .years {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+
+    .cta-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cta-buttons a {
+        text-decoration: none;
+        color: white;
+    }
+        .header-section {
+            padding-top: 30vh;
+    }
+    
     .header-content {
         flex-direction: column;
         text-align: center;
@@ -379,7 +438,12 @@ nav {
     }
 
     .nav-links {
+        width: 60vw;
         gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .services-grid {
@@ -463,19 +527,22 @@ nav {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+   
 }
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+.project-card:hover {
+    transform: scale(2);
 }
+    .project-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: radial-gradient( #F6C233, white );
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
 
 .project-card:hover::before {
     transform: scaleX(1);
@@ -550,7 +617,7 @@ nav {
 }
 
 .modal-header {
-    padding: 32px 32px 0 32px;
+    padding: 50px 32px 0 32px;
     border-bottom: 1px solid #e5e5e0;
     position: relative;
 }
@@ -582,6 +649,7 @@ nav {
     padding: 32px;
     overflow-y: auto;
     max-height: calc(90vh - 120px);
+    
 }
 
 .modal h2 {
