@@ -68,8 +68,8 @@ nav {
 
 /* Header Section */
 .header-section {
-  width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background: linear-gradient(135deg, white 0%,  #2c3e50 100%);
     display: flex;
     align-items: center;
@@ -83,8 +83,8 @@ nav {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    padding: 0 50px;
-    gap: 80px;
+    padding: 0 40px;
+    gap: 40px;
 }
 
 .text-content {
@@ -99,7 +99,8 @@ nav {
 }
 
 .main-title {
-    font-size: 64px;
+
+    font-size: min(4vw, 64px);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
@@ -111,7 +112,7 @@ nav {
 }
 
 .subtitle {
-    font-size: 48px;
+    font-size: min(3.5vw, 48px);
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 30px;
@@ -122,7 +123,7 @@ nav {
     line-height: 1.6;
     opacity: 0.9;
     margin-bottom: 40px;
-    max-width: 400px;
+
 }
 
 .cta-buttons {
@@ -396,6 +397,8 @@ nav {
 
 }
 
+
+
 .projects-grid {
    
     margin: 40px;
@@ -490,6 +493,7 @@ onsive */
     }
     .description{
         font-size: 15px;
+       margin: 0 7%;
     }
     .header-section {
       padding-top: 10vh;
